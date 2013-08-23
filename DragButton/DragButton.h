@@ -10,12 +10,15 @@
 
 @interface DragButton : UIButton
 {
+    BOOL dragEnable;
+    
     @private
     CGPoint beginPoint;
     BOOL isMoving;
 }
 
-@property (nonatomic) BOOL dragEnable;
+//default value: YES
+@property (nonatomic,assign) BOOL dragEnable;
 
 
 @end

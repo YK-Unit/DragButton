@@ -21,7 +21,6 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     DragButton *bt_drag = [[DragButton alloc]initWithFrame:CGRectMake(20, 20, 64, 64)];
-    bt_drag.dragEnable = YES;
     
 //Test1 -- set image
     [bt_drag setImage:[UIImage imageNamed:@"Ubuntu.png"] forState:UIControlStateNormal];
