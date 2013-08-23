@@ -31,7 +31,7 @@
     
     beginPoint = [touch locationInView:self];
     
-    isMoving = NO;
+    isMoved = NO;
     
     [super touchesBegan:touches withEvent:event];
 }
@@ -63,14 +63,14 @@
     //移动view
     self.center = newcenter;
     
-    isMoving = YES;
+    isMoved = YES;
     
     [super touchesMoved:touches withEvent:event];
 }
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    if (isMoving) {
+    if (isMoved) {
         [self setHighlighted:NO];
         return;
     }

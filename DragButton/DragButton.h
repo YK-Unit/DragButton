@@ -14,7 +14,7 @@
     
     @private
     CGPoint beginPoint;
-    BOOL isMoving;
+    BOOL isMoved;
 }
 
 //default value: YES
